@@ -1,0 +1,52 @@
+.row {
+	height: 90px;
+	text-align: left;
+	color: #f9f9f9;
+	border-radius: 15px;
+	display: grid;
+	grid-template-columns: 1fr 30px;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	padding: 0 10px;
+	width: 100%;
+	margin-bottom: 35px;
+	color: #1c2938;
+	box-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.4);
+	transition: 0.1s ease-in;
+}
+
+.row:hover {
+	box-shadow: 1px 3px 6.5px rgba(0, 0, 0, 0.5);
+	background: rgb(248, 248, 248);
+	transform: translateY(-3px);
+}
+
+.row-td {
+	cursor: text;
+}
+
+.row-icon {
+	margin-right: 10px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.row-td2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.row-inp {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+	.row {
+		height: 70px;
+		margin-bottom: 20px;
+	}
+}

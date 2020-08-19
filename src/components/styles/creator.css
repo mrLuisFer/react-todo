@@ -1,0 +1,69 @@
+.task-creator {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 auto;
+	height: 90px;
+	width: auto;
+}
+
+.creator-inp {
+	height: 50px;
+	width: 90%;
+	border-radius: 15px 0 0 15px;
+	border: 0;
+	outline: none;
+	padding-left: 35px;
+	color: #1f2831;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+
+.creator-inp::placeholder {
+	font-size: 17px;
+	opacity: 0.5;
+	letter-spacing: 0.5px;
+	color: #383e56;
+	font-weight: 600;
+}
+
+.creator-inp:focus {
+	background: #fbfaf8;
+}
+
+.creator-btn {
+	width: 135px;
+	height: 50px;
+	border: 0;
+	border-radius: 0 15px 15px 0;
+	background: #2ed188;
+	font-size: 18px;
+	font-weight: 700;
+	color: #ecfcff;
+	cursor: pointer;
+	transition: background 0.1s ease-in;
+}
+
+.creator-btn:hover {
+	background: #59c57d;
+	text-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.creator-btn-icon {
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+	.creator-inp {
+		font-size: 12px;
+		padding-left: 15px;
+	}
+
+	.creator-inp::placeholder {
+		font-size: 12px;
+	}
+
+	.creator-btn {
+		font-size: 13px;
+	}
+}

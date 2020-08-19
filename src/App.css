@@ -1,0 +1,57 @@
+.App {
+	padding: 35px;
+}
+
+.table {
+	width: 100%;
+	background: #fdfdf6;
+	margin-top: 40px;
+	border-radius: 15px;
+	padding: 20px 35px;
+}
+
+.thead-tr {
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	font-weight: 600;
+	color: #222831;
+	margin-bottom: 20px;
+}
+
+.thead-icon {
+	margin-right: 10px;
+}
+
+.table-row {
+	margin-bottom: 20px;
+}
+
+.table-complete {
+	background: #c2f3ed;
+}
+
+.app-done,
+.app-desc {
+	transition: all 0.15s ease;
+}
+
+.app-done:hover {
+	color: rgb(101, 223, 182);
+	text-shadow: 0.2px 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.app-desc:hover {
+	color: #33425b;
+}
+
+@media screen and (max-width: 400px) {
+	.table {
+		padding: 20px 15px;
+		margin-top: 20px;
+	}
+
+	.thead-tr {
+		font-size: 13px;
+	}
+}

@@ -1,0 +1,45 @@
+.ctrl {
+	background: #00c9b1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 30px auto;
+	height: 50px;
+	padding: 10px 40px;
+	border-radius: 15px;
+}
+
+.ctrl-inp {
+	margin-right: 20px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.ctrl-label {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.ctrl-task-icon {
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+	.ctrl {
+		padding: 0x 25px;
+	}
+
+	.ctrl-inp {
+		width: 17px;
+		height: 17px;
+	}
+
+	.ctrl-label {
+		font-size: 16px;
+	}
+
+	.ctrl-task-icon {
+		margin-left: 5px;
+	}
+}
