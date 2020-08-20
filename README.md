@@ -1,6 +1,6 @@
 # ⭐To-do list app, made with ReactJs
 
-![App Preview](./public/preview.png)
+![App Preview](./public/preview.PNG)
 
 ⭐This application will be modified and improved as part of practice with ReactJs
 
