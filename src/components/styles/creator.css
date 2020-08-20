@@ -12,11 +12,21 @@
 	width: 90%;
 	border-radius: 15px 0 0 15px;
 	border: 0;
-	outline: none;
-	padding-left: 35px;
+	outline: 0;
+	padding-left: 25px;
 	color: #1f2831;
 	font-weight: 400;
-	text-transform: capitalize;
+	background: #ece9e6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to left,
+		#ffffff,
+		#ece9e6
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#ffffff,
+		#ece9e6
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .creator-inp::placeholder {
@@ -28,7 +38,17 @@
 }
 
 .creator-inp:focus {
-	background: #fbfaf8;
+	background: #ece9e6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ffffff,
+		#ece9e6
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ffffff,
+		#ece9e6
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .creator-btn {
@@ -36,27 +56,33 @@
 	height: 50px;
 	border: 0;
 	border-radius: 0 15px 15px 0;
-	background: #2ed188;
+	text-shadow: 0.5px 0px 3px rgba(0, 0, 0, 0.2);
 	font-size: 18px;
 	font-weight: 700;
 	color: #ecfcff;
 	cursor: pointer;
-	transition: background 0.1s ease-in;
+	outline: 0;
+	background: #0ba360;
+	transition: all 0.2s ease-out;
 }
 
 .creator-btn:hover {
-	background: #59c57d;
-	text-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.3);
+	background: #55caa5;
 }
 
 .creator-btn-icon {
 	margin-right: 10px;
+	transition: 0.4s ease;
 }
 
-@media screen and (max-width: 400px) {
+.creator-btn-icon:hover {
+	transform: rotate(180deg);
+}
+
+@media screen and (max-width: 500px) {
 	.creator-inp {
 		font-size: 12px;
-		padding-left: 15px;
+		padding-left: 10px;
 	}
 
 	.creator-inp::placeholder {

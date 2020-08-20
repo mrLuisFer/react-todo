@@ -1,5 +1,18 @@
 .ctrl {
-	background: #00c9b1;
+	background: #0cebeb; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#29ffc6,
+		#20e3b2,
+		#0cebeb
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#29ffc6,
+		#20e3b2,
+		#0cebeb
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -25,18 +38,24 @@
 	margin-left: 10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 	.ctrl {
-		padding: 0x 25px;
+		padding: 5px 25px;
+		display: flex;
+		align-items: center;
 	}
 
 	.ctrl-inp {
-		width: 17px;
-		height: 17px;
+		width: 16px;
+		height: 16px;
+		background: #292929;
+		margin-right: 10px;
+		color: #fffaff;
 	}
 
 	.ctrl-label {
 		font-size: 16px;
+		line-height: 0;
 	}
 
 	.ctrl-task-icon {

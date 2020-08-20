@@ -31,7 +31,7 @@ function App() {
 			setUsername('React');
 			setTaskItems([
 				{
-					name: 'Add a new task',
+					name: 'To-do App created by mrLuisFer',
 					done: false,
 				},
 			]);
@@ -69,7 +69,7 @@ function App() {
 	const createNewTask = (taskName) => {
 		if (
 			!taskItems.find((singleT) => singleT.name === taskName) &&
-			taskName.length > 0
+			taskName.length > 1
 		) {
 			setTaskItems([...taskItems, { name: taskName, done: false }]);
 		}

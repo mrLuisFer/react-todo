@@ -4,7 +4,7 @@
 
 .table {
 	width: 100%;
-	background: #fdfdf6;
+	background: #f1f1ed;
 	margin-top: 40px;
 	border-radius: 15px;
 	padding: 20px 35px;
@@ -28,7 +28,19 @@
 }
 
 .table-complete {
-	background: #c2f3ed;
+	background: #7dc9fb; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to bottom left,
+		#ffffff,
+		#6dd5fa,
+		#2980b9
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to bottom left,
+		#ffffff,
+		#6dd5fa,
+		#2980b9
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .app-done,
@@ -45,9 +57,13 @@
 	color: #33425b;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+	.App {
+		padding: 20px 10px;
+	}
+
 	.table {
-		padding: 20px 15px;
+		padding: 15px 8px;
 		margin-top: 20px;
 	}
 

@@ -20,6 +20,7 @@ const Creator = ({ callback }) => {
 				value={newTask}
 				onChange={updateTaskValue}
 				placeholder="Add a New Task..."
+				autoFocus
 			/>
 			<button
 				className="creator-btn"
